@@ -16,6 +16,8 @@
 		B6E6D8282512BCFD00031832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8272512BCFD00031832 /* main.m */; };
 		B6E6D8322512BCFD00031832 /* SlalomCoachTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8312512BCFD00031832 /* SlalomCoachTests.m */; };
 		B6E6D83D2512BCFD00031832 /* SlalomCoachUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D83C2512BCFD00031832 /* SlalomCoachUITests.m */; };
+		B6E6D8502512BDC600031832 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D84F2512BDC600031832 /* HomeViewController.m */; };
+		B6E6D8532512BDDE00031832 /* RunCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8522512BDDE00031832 /* RunCaptureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		B6E6D8382512BCFD00031832 /* SlalomCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlalomCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E6D83C2512BCFD00031832 /* SlalomCoachUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlalomCoachUITests.m; sourceTree = "<group>"; };
 		B6E6D83E2512BCFD00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E6D84E2512BDC600031832 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B6E6D84F2512BDC600031832 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B6E6D8512512BDDE00031832 /* RunCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCaptureViewController.h; sourceTree = "<group>"; };
+		B6E6D8522512BDDE00031832 /* RunCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCaptureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 		B6E6D8142512BCFB00031832 /* SlalomCoach */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D84D2512BDA900031832 /* run-capture */,
+				B6E6D84C2512BD7C00031832 /* home */,
 				B6E6D8152512BCFB00031832 /* AppDelegate.h */,
 				B6E6D8162512BCFB00031832 /* AppDelegate.m */,
 				B6E6D8182512BCFB00031832 /* SceneDelegate.h */,
@@ -135,6 +143,24 @@
 				B6E6D83E2512BCFD00031832 /* Info.plist */,
 			);
 			path = SlalomCoachUITests;
+			sourceTree = "<group>";
+		};
+		B6E6D84C2512BD7C00031832 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D84E2512BDC600031832 /* HomeViewController.h */,
+				B6E6D84F2512BDC600031832 /* HomeViewController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		B6E6D84D2512BDA900031832 /* run-capture */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D8512512BDDE00031832 /* RunCaptureViewController.h */,
+				B6E6D8522512BDDE00031832 /* RunCaptureViewController.m */,
+			);
+			path = "run-capture";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E6D81D2512BCFB00031832 /* ViewController.m in Sources */,
+				B6E6D8532512BDDE00031832 /* RunCaptureViewController.m in Sources */,
 				B6E6D8172512BCFB00031832 /* AppDelegate.m in Sources */,
 				B6E6D8282512BCFD00031832 /* main.m in Sources */,
+				B6E6D8502512BDC600031832 /* HomeViewController.m in Sources */,
 				B6E6D81A2512BCFB00031832 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
