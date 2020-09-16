@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6E6D8172512BCFB00031832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8162512BCFB00031832 /* AppDelegate.m */; };
+		B6E6D81A2512BCFB00031832 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8192512BCFB00031832 /* SceneDelegate.m */; };
+		B6E6D81D2512BCFB00031832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D81C2512BCFB00031832 /* ViewController.m */; };
+		B6E6D8202512BCFB00031832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D81E2512BCFB00031832 /* Main.storyboard */; };
+		B6E6D8222512BCFD00031832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D8212512BCFD00031832 /* Assets.xcassets */; };
+		B6E6D8252512BCFD00031832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E6D8232512BCFD00031832 /* LaunchScreen.storyboard */; };
+		B6E6D8282512BCFD00031832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8272512BCFD00031832 /* main.m */; };
+		B6E6D8322512BCFD00031832 /* SlalomCoachTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8312512BCFD00031832 /* SlalomCoachTests.m */; };
+		B6E6D83D2512BCFD00031832 /* SlalomCoachUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D83C2512BCFD00031832 /* SlalomCoachUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6E6D82E2512BCFD00031832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E6D80A2512BCFB00031832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E6D8112512BCFB00031832;
+			remoteInfo = SlalomCoach;
+		};
+		B6E6D8392512BCFD00031832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E6D80A2512BCFB00031832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E6D8112512BCFB00031832;
+			remoteInfo = SlalomCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6E6D8122512BCFB00031832 /* SlalomCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlalomCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6D8152512BCFB00031832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6E6D8162512BCFB00031832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6E6D8182512BCFB00031832 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B6E6D8192512BCFB00031832 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B6E6D81B2512BCFB00031832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6E6D81C2512BCFB00031832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6E6D81F2512BCFB00031832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6E6D8212512BCFD00031832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6E6D8242512BCFD00031832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6E6D8262512BCFD00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E6D8272512BCFD00031832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6E6D82D2512BCFD00031832 /* SlalomCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlalomCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6D8312512BCFD00031832 /* SlalomCoachTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlalomCoachTests.m; sourceTree = "<group>"; };
+		B6E6D8332512BCFD00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E6D8382512BCFD00031832 /* SlalomCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlalomCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E6D83C2512BCFD00031832 /* SlalomCoachUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlalomCoachUITests.m; sourceTree = "<group>"; };
+		B6E6D83E2512BCFD00031832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6E6D80F2512BCFB00031832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D82A2512BCFD00031832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D8352512BCFD00031832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6E6D8092512BCFB00031832 = {
+			isa = PBXGroup;
+			children = (
+				B6E6D8142512BCFB00031832 /* SlalomCoach */,
+				B6E6D8302512BCFD00031832 /* SlalomCoachTests */,
+				B6E6D83B2512BCFD00031832 /* SlalomCoachUITests */,
+				B6E6D8132512BCFB00031832 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6E6D8132512BCFB00031832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D8122512BCFB00031832 /* SlalomCoach.app */,
+				B6E6D82D2512BCFD00031832 /* SlalomCoachTests.xctest */,
+				B6E6D8382512BCFD00031832 /* SlalomCoachUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E6D8142512BCFB00031832 /* SlalomCoach */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D8152512BCFB00031832 /* AppDelegate.h */,
+				B6E6D8162512BCFB00031832 /* AppDelegate.m */,
+				B6E6D8182512BCFB00031832 /* SceneDelegate.h */,
+				B6E6D8192512BCFB00031832 /* SceneDelegate.m */,
+				B6E6D81B2512BCFB00031832 /* ViewController.h */,
+				B6E6D81C2512BCFB00031832 /* ViewController.m */,
+				B6E6D81E2512BCFB00031832 /* Main.storyboard */,
+				B6E6D8212512BCFD00031832 /* Assets.xcassets */,
+				B6E6D8232512BCFD00031832 /* LaunchScreen.storyboard */,
+				B6E6D8262512BCFD00031832 /* Info.plist */,
+				B6E6D8272512BCFD00031832 /* main.m */,
+			);
+			path = SlalomCoach;
+			sourceTree = "<group>";
+		};
+		B6E6D8302512BCFD00031832 /* SlalomCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D8312512BCFD00031832 /* SlalomCoachTests.m */,
+				B6E6D8332512BCFD00031832 /* Info.plist */,
+			);
+			path = SlalomCoachTests;
+			sourceTree = "<group>";
+		};
+		B6E6D83B2512BCFD00031832 /* SlalomCoachUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D83C2512BCFD00031832 /* SlalomCoachUITests.m */,
+				B6E6D83E2512BCFD00031832 /* Info.plist */,
+			);
+			path = SlalomCoachUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6E6D8112512BCFB00031832 /* SlalomCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E6D8412512BCFD00031832 /* Build configuration list for PBXNativeTarget "SlalomCoach" */;
+			buildPhases = (
+				B6E6D80E2512BCFB00031832 /* Sources */,
+				B6E6D80F2512BCFB00031832 /* Frameworks */,
+				B6E6D8102512BCFB00031832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlalomCoach;
+			productName = SlalomCoach;
+			productReference = B6E6D8122512BCFB00031832 /* SlalomCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6E6D82C2512BCFD00031832 /* SlalomCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E6D8442512BCFD00031832 /* Build configuration list for PBXNativeTarget "SlalomCoachTests" */;
+			buildPhases = (
+				B6E6D8292512BCFD00031832 /* Sources */,
+				B6E6D82A2512BCFD00031832 /* Frameworks */,
+				B6E6D82B2512BCFD00031832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E6D82F2512BCFD00031832 /* PBXTargetDependency */,
+			);
+			name = SlalomCoachTests;
+			productName = SlalomCoachTests;
+			productReference = B6E6D82D2512BCFD00031832 /* SlalomCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6E6D8372512BCFD00031832 /* SlalomCoachUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E6D8472512BCFD00031832 /* Build configuration list for PBXNativeTarget "SlalomCoachUITests" */;
+			buildPhases = (
+				B6E6D8342512BCFD00031832 /* Sources */,
+				B6E6D8352512BCFD00031832 /* Frameworks */,
+				B6E6D8362512BCFD00031832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E6D83A2512BCFD00031832 /* PBXTargetDependency */,
+			);
+			name = SlalomCoachUITests;
+			productName = SlalomCoachUITests;
+			productReference = B6E6D8382512BCFD00031832 /* SlalomCoachUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6E6D80A2512BCFB00031832 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "James Gibbons";
+				TargetAttributes = {
+					B6E6D8112512BCFB00031832 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					B6E6D82C2512BCFD00031832 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = B6E6D8112512BCFB00031832;
+					};
+					B6E6D8372512BCFD00031832 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = B6E6D8112512BCFB00031832;
+					};
+				};
+			};
+			buildConfigurationList = B6E6D80D2512BCFB00031832 /* Build configuration list for PBXProject "SlalomCoach" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6E6D8092512BCFB00031832;
+			productRefGroup = B6E6D8132512BCFB00031832 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6E6D8112512BCFB00031832 /* SlalomCoach */,
+				B6E6D82C2512BCFD00031832 /* SlalomCoachTests */,
+				B6E6D8372512BCFD00031832 /* SlalomCoachUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6E6D8102512BCFB00031832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D8252512BCFD00031832 /* LaunchScreen.storyboard in Resources */,
+				B6E6D8222512BCFD00031832 /* Assets.xcassets in Resources */,
+				B6E6D8202512BCFB00031832 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D82B2512BCFD00031832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D8362512BCFD00031832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6E6D80E2512BCFB00031832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D81D2512BCFB00031832 /* ViewController.m in Sources */,
+				B6E6D8172512BCFB00031832 /* AppDelegate.m in Sources */,
+				B6E6D8282512BCFD00031832 /* main.m in Sources */,
+				B6E6D81A2512BCFB00031832 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D8292512BCFD00031832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D8322512BCFD00031832 /* SlalomCoachTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E6D8342512BCFD00031832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E6D83D2512BCFD00031832 /* SlalomCoachUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6E6D82F2512BCFD00031832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E6D8112512BCFB00031832 /* SlalomCoach */;
+			targetProxy = B6E6D82E2512BCFD00031832 /* PBXContainerItemProxy */;
+		};
+		B6E6D83A2512BCFD00031832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E6D8112512BCFB00031832 /* SlalomCoach */;
+			targetProxy = B6E6D8392512BCFD00031832 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6E6D81E2512BCFB00031832 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E6D81F2512BCFB00031832 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6E6D8232512BCFD00031832 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E6D8242512BCFD00031832 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6E6D83F2512BCFD00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6E6D8402512BCFD00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6E6D8422512BCFD00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlalomCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipweb.co.uk.SlalomCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6E6D8432512BCFD00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlalomCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipweb.co.uk.SlalomCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6E6D8452512BCFD00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlalomCoachTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipweb.co.uk.SlalomCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlalomCoach.app/SlalomCoach";
+			};
+			name = Debug;
+		};
+		B6E6D8462512BCFD00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlalomCoachTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipweb.co.uk.SlalomCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlalomCoach.app/SlalomCoach";
+			};
+			name = Release;
+		};
+		B6E6D8482512BCFD00031832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlalomCoachUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipweb.co.uk.SlalomCoachUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlalomCoach;
+			};
+			name = Debug;
+		};
+		B6E6D8492512BCFD00031832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlalomCoachUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipweb.co.uk.SlalomCoachUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlalomCoach;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6E6D80D2512BCFB00031832 /* Build configuration list for PBXProject "SlalomCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D83F2512BCFD00031832 /* Debug */,
+				B6E6D8402512BCFD00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E6D8412512BCFD00031832 /* Build configuration list for PBXNativeTarget "SlalomCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D8422512BCFD00031832 /* Debug */,
+				B6E6D8432512BCFD00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E6D8442512BCFD00031832 /* Build configuration list for PBXNativeTarget "SlalomCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D8452512BCFD00031832 /* Debug */,
+				B6E6D8462512BCFD00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E6D8472512BCFD00031832 /* Build configuration list for PBXNativeTarget "SlalomCoachUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E6D8482512BCFD00031832 /* Debug */,
+				B6E6D8492512BCFD00031832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6E6D80A2512BCFB00031832 /* Project object */;
+}
