@@ -18,6 +18,8 @@
 		B6E6D83D2512BCFD00031832 /* SlalomCoachUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D83C2512BCFD00031832 /* SlalomCoachUITests.m */; };
 		B6E6D8502512BDC600031832 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D84F2512BDC600031832 /* HomeViewController.m */; };
 		B6E6D8532512BDDE00031832 /* RunCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8522512BDDE00031832 /* RunCaptureViewController.m */; };
+		B6E6D8572512D70200031832 /* AddSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8562512D70200031832 /* AddSessionViewController.m */; };
+		B6E6D85A2512D73200031832 /* ViewSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8592512D73200031832 /* ViewSessionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		B6E6D84F2512BDC600031832 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B6E6D8512512BDDE00031832 /* RunCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunCaptureViewController.h; sourceTree = "<group>"; };
 		B6E6D8522512BDDE00031832 /* RunCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunCaptureViewController.m; sourceTree = "<group>"; };
+		B6E6D8552512D70200031832 /* AddSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddSessionViewController.h; sourceTree = "<group>"; };
+		B6E6D8562512D70200031832 /* AddSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddSessionViewController.m; sourceTree = "<group>"; };
+		B6E6D8582512D73200031832 /* ViewSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewSessionViewController.h; sourceTree = "<group>"; };
+		B6E6D8592512D73200031832 /* ViewSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		B6E6D8142512BCFB00031832 /* SlalomCoach */ = {
 			isa = PBXGroup;
 			children = (
+				B6E6D8542512D6DB00031832 /* session */,
 				B6E6D84D2512BDA900031832 /* run-capture */,
 				B6E6D84C2512BD7C00031832 /* home */,
 				B6E6D8152512BCFB00031832 /* AppDelegate.h */,
@@ -161,6 +168,17 @@
 				B6E6D8522512BDDE00031832 /* RunCaptureViewController.m */,
 			);
 			path = "run-capture";
+			sourceTree = "<group>";
+		};
+		B6E6D8542512D6DB00031832 /* session */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6D8552512D70200031832 /* AddSessionViewController.h */,
+				B6E6D8562512D70200031832 /* AddSessionViewController.m */,
+				B6E6D8582512D73200031832 /* ViewSessionViewController.h */,
+				B6E6D8592512D73200031832 /* ViewSessionViewController.m */,
+			);
+			path = session;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +315,9 @@
 				B6E6D8532512BDDE00031832 /* RunCaptureViewController.m in Sources */,
 				B6E6D8172512BCFB00031832 /* AppDelegate.m in Sources */,
 				B6E6D8282512BCFD00031832 /* main.m in Sources */,
+				B6E6D85A2512D73200031832 /* ViewSessionViewController.m in Sources */,
 				B6E6D8502512BDC600031832 /* HomeViewController.m in Sources */,
+				B6E6D8572512D70200031832 /* AddSessionViewController.m in Sources */,
 				B6E6D81A2512BCFB00031832 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,8 @@
 //
-//  HomeViewController.h
+//  ViewSessionViewController.h
 //  SlalomCoach
 //
-//  Created by James Gibbons on 16/09/2020.
+//  Created by James Gibbons on 17/09/2020.
 //  Copyright © 2020 James Gibbons. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController
+@interface ViewSessionViewController : UIViewController
 
 @end
 

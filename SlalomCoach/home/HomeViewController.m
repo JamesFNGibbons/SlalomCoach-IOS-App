@@ -19,6 +19,30 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self initSavedSessions];
+}
+
+
+- (void) initSavedSessions {
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"saved-sessions"]) {
+    
+    }
+    else {
+        // no saved sessions
+        UIAlertController *welcomeAlert = [UIAlertController alertControllerWithTitle:@"Welcome!" message:@"It looks like this isx your first time here, to get started you need to create your first session." preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        UIAlertAction *addSessionAction = [UIAlertAction actionWithTitle:@"Create First Session" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            UIViewController *addSessionViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"addSessionView"];
+            
+            [self presentViewController:addSessionViewController animated:true completion: nil];
+        }];
+
+        [welcomeAlert addAction:addSessionAction];
+        [self presentViewController:welcomeAlert animated:true completion:nil];
+    }
+}
+
 /*
 #pragma mark - Navigation
 
