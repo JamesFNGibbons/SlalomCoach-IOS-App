@@ -14,12 +14,15 @@
 
 @implementation AddSessionViewController
 
-NSArray *athletes;
+NSMutableArray *athletes;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // init athletes array.
+    athletes = [[NSMutableArray alloc] init];
+        
     self.athleteTable.dataSource = self;
     self.athleteTable.delegate = self;
 }
@@ -29,10 +32,28 @@ NSArray *athletes;
     return athletes.count;
 }
 
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIContextualAction *deleteAthleteAction = [[UIContextualAction alloc] init];
+    [deleteAthleteAction setBackgroundColor:[UIColor redColor]];
+    [deleteAthleteAction setTitle:@"Delete"];
+    
+    UISwipeActionsConfiguration *swipeActionConfig = [UISwipeActionsConfiguration configurationWithActions:@[
+        deleteAthleteAction
+    ]];
+    return swipeActionConfig;
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return true;
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *athleteCell = [self.athleteTable dequeueReusableCellWithIdentifier:@"athleteCell"];
+    UITableViewCell *athleteCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     if(athleteCell) {
+        athleteCell.textLabel.text = @"Bob";
+        
         return athleteCell;
     }
     else {
@@ -43,6 +64,22 @@ NSArray *athletes;
     return [[UITableViewCell alloc] init];
 }
 
+
+- (void) deleteAthlete {
+    NSLog(@"Delete athlete event called.");
+}
+
+
+- (IBAction)addAthleteButtonTapEvent:(id)sender {
+    NSLog(@"Adding athlete");
+    
+    [athletes addObject:@"Name"];
+    for(NSObject *obj in athletes) {
+        NSLog(obj);
+    }
+    
+    [self.athleteTable reloadData];
+}
 
 /*
 #pragma mark - Navigation
