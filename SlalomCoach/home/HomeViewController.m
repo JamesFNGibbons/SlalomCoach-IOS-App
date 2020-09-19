@@ -14,21 +14,51 @@
 
 @implementation HomeViewController
 
+NSMutableArray *sessions;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
+
 - (void)viewDidAppear:(BOOL)animated {
     [self initSavedSessions];
+    
+    self.sessionsCollectionView.dataSource = self;
+    self.sessionsCollectionView.delegate = self;
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"sessions"]) {
+        sessions = [[NSUserDefaults standardUserDefaults] objectForKey:@"sessions"];
+    }
+    else {
+        sessions = [[NSMutableArray alloc] init];
+    }
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return sessions.count;
+}
+
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    SessionCollectionViewCell *cell = [self.sessionsCollectionView dequeueReusableCellWithReuseIdentifier:@"sessionCell" forIndexPath:indexPath];
+        
+    // load session data to the session cell
+    NSDictionary *sessionData = [sessions objectAtIndex:0];
+    cell.sessionName.text = [sessionData objectForKey:@"sessionName"];
+    
+    return cell;
 }
 
 
 - (void) initSavedSessions {
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"sessions"]) {
-    
-    }
-    else {
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"sessions"]) {
         // no saved sessions
         UIAlertController *welcomeAlert = [UIAlertController alertControllerWithTitle:@"Welcome!" message:@"It looks like this isx your first time here, to get started you need to create your first session." preferredStyle:UIAlertControllerStyleActionSheet];
         

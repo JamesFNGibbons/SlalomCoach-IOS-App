@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "components/SessionCollectionViewCell.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *sessionsCollectionView;
 
 @end
 

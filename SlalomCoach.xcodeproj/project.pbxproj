@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B617613C25164CF700B2CE19 /* SessionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B617613B25164CF700B2CE19 /* SessionCollectionViewCell.m */; };
 		B6E6D8172512BCFB00031832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8162512BCFB00031832 /* AppDelegate.m */; };
 		B6E6D81A2512BCFB00031832 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D8192512BCFB00031832 /* SceneDelegate.m */; };
 		B6E6D81D2512BCFB00031832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6D81C2512BCFB00031832 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B617613A25164CF700B2CE19 /* SessionCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionCollectionViewCell.h; sourceTree = "<group>"; };
+		B617613B25164CF700B2CE19 /* SessionCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionCollectionViewCell.m; sourceTree = "<group>"; };
 		B6E6D8122512BCFB00031832 /* SlalomCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlalomCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E6D8152512BCFB00031832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6E6D8162512BCFB00031832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B617613925164CCB00B2CE19 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				B617613A25164CF700B2CE19 /* SessionCollectionViewCell.h */,
+				B617613B25164CF700B2CE19 /* SessionCollectionViewCell.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		B6E6D8092512BCFB00031832 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 		B6E6D84C2512BD7C00031832 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				B617613925164CCB00B2CE19 /* components */,
 				B6E6D84E2512BDC600031832 /* HomeViewController.h */,
 				B6E6D84F2512BDC600031832 /* HomeViewController.m */,
 			);
@@ -318,6 +331,7 @@
 				B6E6D85A2512D73200031832 /* ViewSessionViewController.m in Sources */,
 				B6E6D8502512BDC600031832 /* HomeViewController.m in Sources */,
 				B6E6D8572512D70200031832 /* AddSessionViewController.m in Sources */,
+				B617613C25164CF700B2CE19 /* SessionCollectionViewCell.m in Sources */,
 				B6E6D81A2512BCFB00031832 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
