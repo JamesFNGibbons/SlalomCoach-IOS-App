@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,8 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -29,8 +31,8 @@
                     <view key="view" contentMode="scaleToFill" id="ek8-93-C94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9Ji-JF-yzJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="xxF-2d-o9B"/>
                 </viewController>
@@ -46,52 +48,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHK-R5-LOE">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHK-R5-LOE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Add Session" id="qQb-iy-3z1"/>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJj-QY-w4x">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJj-QY-w4x">
                                 <rect key="frame" x="16" y="96" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h3-Hs-TZo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h3-Hs-TZo">
                                 <rect key="frame" x="16" y="73" width="92" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8fc-ME-ebY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8fc-ME-ebY">
                                 <rect key="frame" x="16" y="182" width="343" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="lBc-6F-loz"/>
+                                </constraints>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4T-TO-dMF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4T-TO-dMF">
                                 <rect key="frame" x="334" y="154" width="24" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="plus.rectangle" catalog="system"/>
                                 <connections>
                                     <action selector="addAthleteButtonTapEvent:" destination="q4p-sw-DMW" eventType="touchUpInside" id="arb-8P-cGv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Athletes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-pj-YYP">
-                                <rect key="frame" x="16" y="157" width="54" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Athletes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-pj-YYP">
+                                <rect key="frame" x="16" y="156.5" width="53" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7t-bf-Dec">
+                                <rect key="frame" x="16" y="362" width="86" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n5T-MR-vft">
+                                <rect key="frame" x="16" y="387" width="342" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="kO4-fd-sNK"/>
+                                </constraints>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYa-GZ-L4t">
+                                <rect key="frame" x="15" y="576" width="343" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Save Session">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveSessionButtonTapEvent:" destination="q4p-sw-DMW" eventType="touchUpInside" id="jYO-R8-v2x"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rbc-SG-Nhe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rbc-SG-Nhe" firstAttribute="trailing" secondItem="I4T-TO-dMF" secondAttribute="trailing" constant="17" id="0sv-WU-c3U"/>
+                            <constraint firstItem="I4T-TO-dMF" firstAttribute="top" secondItem="KJj-QY-w4x" secondAttribute="bottom" constant="24" id="1tF-bY-1pr"/>
+                            <constraint firstItem="I4T-TO-dMF" firstAttribute="centerY" secondItem="mS7-pj-YYP" secondAttribute="centerY" id="8dc-D2-v7f"/>
+                            <constraint firstItem="n5T-MR-vft" firstAttribute="leading" secondItem="S7t-bf-Dec" secondAttribute="leading" id="ElC-bv-J71"/>
+                            <constraint firstItem="8fc-ME-ebY" firstAttribute="centerX" secondItem="VHK-R5-LOE" secondAttribute="centerX" id="H6d-Qq-jk6"/>
+                            <constraint firstItem="n5T-MR-vft" firstAttribute="leading" secondItem="8fc-ME-ebY" secondAttribute="leading" id="HlR-L5-adB"/>
+                            <constraint firstItem="rbc-SG-Nhe" firstAttribute="bottom" secondItem="hYa-GZ-L4t" secondAttribute="bottom" constant="53" id="KvI-O2-uPb"/>
+                            <constraint firstItem="hYa-GZ-L4t" firstAttribute="centerX" secondItem="n5T-MR-vft" secondAttribute="centerX" id="M28-Tt-x2G"/>
+                            <constraint firstItem="KJj-QY-w4x" firstAttribute="centerX" secondItem="VHK-R5-LOE" secondAttribute="centerX" id="Pr3-65-Wgo"/>
+                            <constraint firstItem="8fc-ME-ebY" firstAttribute="trailing" secondItem="gSn-bf-8GJ" secondAttribute="trailingMargin" id="TUx-56-YZV"/>
+                            <constraint firstItem="hYa-GZ-L4t" firstAttribute="top" secondItem="n5T-MR-vft" secondAttribute="bottom" constant="27" id="Vmc-1e-PIX"/>
+                            <constraint firstItem="n5T-MR-vft" firstAttribute="trailing" secondItem="I4T-TO-dMF" secondAttribute="trailing" id="VyO-Ls-9QC"/>
+                            <constraint firstItem="8fc-ME-ebY" firstAttribute="leading" secondItem="mS7-pj-YYP" secondAttribute="leading" id="am0-lf-2RY"/>
+                            <constraint firstItem="8fc-ME-ebY" firstAttribute="top" secondItem="I4T-TO-dMF" secondAttribute="bottom" constant="6" id="b1W-G7-v40"/>
+                            <constraint firstItem="n5T-MR-vft" firstAttribute="top" secondItem="S7t-bf-Dec" secondAttribute="bottom" constant="8" id="gJJ-Te-cIR"/>
+                            <constraint firstItem="KJj-QY-w4x" firstAttribute="leading" secondItem="0h3-Hs-TZo" secondAttribute="leading" id="hsn-Fg-tAc"/>
+                            <constraint firstItem="rbc-SG-Nhe" firstAttribute="bottom" secondItem="n5T-MR-vft" secondAttribute="bottom" constant="118" id="kZc-cA-LLI"/>
+                            <constraint firstItem="KJj-QY-w4x" firstAttribute="top" secondItem="0h3-Hs-TZo" secondAttribute="bottom" constant="6" id="pmW-zU-Dos"/>
+                            <constraint firstItem="8fc-ME-ebY" firstAttribute="leading" secondItem="gSn-bf-8GJ" secondAttribute="leadingMargin" id="qy0-1b-WD5"/>
+                            <constraint firstItem="8fc-ME-ebY" firstAttribute="leading" secondItem="KJj-QY-w4x" secondAttribute="leading" id="wjO-M6-23f"/>
+                            <constraint firstItem="rbc-SG-Nhe" firstAttribute="bottom" secondItem="8fc-ME-ebY" secondAttribute="bottom" constant="330" id="wyZ-0e-EA2"/>
+                            <constraint firstItem="hYa-GZ-L4t" firstAttribute="trailing" secondItem="n5T-MR-vft" secondAttribute="trailing" id="x2H-oM-5qG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="athleteTable" destination="8fc-ME-ebY" id="t9H-qi-xKK"/>
+                        <outlet property="sessionName" destination="KJj-QY-w4x" id="Y8a-8S-sMp"/>
+                        <outlet property="sessionTime" destination="n5T-MR-vft" id="mPd-ev-zRp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ux3-yB-GzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -101,5 +148,11 @@
     </scenes>
     <resources>
         <image name="plus.rectangle" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

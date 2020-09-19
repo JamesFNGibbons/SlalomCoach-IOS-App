@@ -25,7 +25,7 @@
 
 
 - (void) initSavedSessions {
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"saved-sessions"]) {
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"sessions"]) {
     
     }
     else {

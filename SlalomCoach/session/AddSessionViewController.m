@@ -81,6 +81,44 @@ NSMutableArray *athletes;
     [self.athleteTable reloadData];
 }
 
+
+- (IBAction)saveSessionButtonTapEvent:(id)sender {
+    NSString *sessionName = [self.sessionName text];
+    
+    if(sessionName != nil && ![sessionName isEqual:@""]) {
+        NSDictionary *newSession = @{
+            @"sessionName": sessionName,
+            @"sessionAthletes": athletes,
+            @"sessionTime": [self.sessionTime date]
+        };
+        
+        // save the new session to the users device.
+        NSMutableArray *savedSessions = [[NSUserDefaults standardUserDefaults] objectForKey:@"sessions"];
+        if(savedSessions) {
+            [savedSessions addObject:newSession];
+        }
+        else {
+            savedSessions = [[NSMutableArray alloc] init];
+            [savedSessions addObject:newSession];
+        }
+        
+        // update saved sessions object in store
+        [[NSUserDefaults standardUserDefaults] setObject:savedSessions forKey:@"sessions"];
+        
+        // close UI
+        [self dismissViewControllerAnimated:true completion:nil];
+        
+    }
+    else {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:@"Please ensure you have filled out the form, and added at least 1 athlete to the session." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *closeAlertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [alert dismissViewControllerAnimated:true completion:nil];
+        }];
+        [alert addAction:closeAlertAction];
+        [self presentViewController:alert animated:true completion:nil];
+    }
+}
+
 /*
 #pragma mark - Navigation
 

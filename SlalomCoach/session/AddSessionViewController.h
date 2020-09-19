@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AddSessionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *sessionTime;
+@property (weak, nonatomic) IBOutlet UITextField *sessionName;
 @property (weak, nonatomic) IBOutlet UITableView *athleteTable;
 
 @end
